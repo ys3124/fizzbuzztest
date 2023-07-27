@@ -11,4 +11,9 @@ describe('fizzbuzztest', () => {
 		const actual = fizzbuzz.response(3)
 		expect(actual).toBe('Fizz')
 	})
+	it('5の倍数を渡したらBuzzを返す', () => {
+		const fizzbuzz = new FizzBuzz()
+		const actual = fizzbuzz.response(5)
+		expect(actual).toBe('Buzz')
+	})
 })
